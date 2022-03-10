@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@color/qmui_config_color_background">
+
+    <com.qmuiteam.qmui.layout.QMUILinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:background="@color/qmui_config_color_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:outlineProvider="background">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:scaleType="centerCrop"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                android:textSize="19sp"
+                android:textColor="#000" />
+            <TextView
+                android:id="@+id/msg_info"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="16sp"
+                android:textColor="#000" />
+        </LinearLayout>
+    </com.qmuiteam.qmui.layout.QMUILinearLayout>
+</LinearLayout>
